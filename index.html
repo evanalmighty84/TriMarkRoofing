@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        if (location.pathname.startsWith('/app')) {
+            // use replace so “Back” won’t bounce you right back
+            window.location.replace('/');
+        }
+    </script>
 
     <title>TriMark Home Construction</title>
 
-    <script>
-        // if the user landed on “/app” or “/app/”…
-        if (location.pathname === '/app' || location.pathname === '/app/') {
-            // redirect them to the site root
-            location.replace('/');
-        }
-    </script>
+
+
     <!--
     Nexus PaintingTemplate
     http://www.templatemo.com/tm-509-hydro
