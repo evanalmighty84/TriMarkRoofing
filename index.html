@@ -3,6 +3,14 @@
 <head>
 
     <title>TriMark Home Construction</title>
+
+    <script>
+        // if the user landed on “/app” or “/app/”…
+        if (location.pathname === '/app' || location.pathname === '/app/') {
+            // redirect them to the site root
+            location.replace('/');
+        }
+    </script>
     <!--
     Nexus PaintingTemplate
     http://www.templatemo.com/tm-509-hydro
