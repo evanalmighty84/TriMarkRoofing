@@ -28,6 +28,7 @@ jobs:
           mkdir deploy
           cp -r index.html blog-detail.html test.html deploy/
           cp -r css fonts images js deploy/
+          cp -r app deploy/
           [ -f CNAME ] && cp CNAME deploy/ || true
 
       - name: Deploy to GitHub Pages
